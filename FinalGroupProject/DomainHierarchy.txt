@@ -1,0 +1,118 @@
+dFinalGroupProject
+
+dDate
+------------------------------------------
+sdSystemTime:
+SysStartTime: datetime2(7)
+SysEndTime: datetime2(7)
+*(create only one object type named Id and assign all these columns that object type)
+
+sdDate:
+PurchaseDate: date
+SaleDate: date
+*(create only one object type named Id and assign all these columns that object type)
+
+
+dNumber
+-------------------------------------------
+sdIntId:
+CountryId: int
+CustomerId: int
+StockId: int
+ModelId: int
+CustomerSpendCapacityId: int
+UserAuthorizationId: int
+ManufacturerModelId: int
+ManufacturerVehicleMakeId: int
+MarketingTypeId: int
+ManufacturerVehicleStockId: int
+SalesOrderVehicleDetailId: int
+StaffId: int
+ManagerId: int
+SalesOrderVehicleId: int
+diagram_id: id  --> change to DiagramId
+principal_id: int --> change to PrincipalId
+*(create only one object type named Id and assign all these columns that object type)
+
+sdFlagBit:
+IsDeleted: bit
+IsCustomerReseller: bit
+IsCustomerCreditRisk: bit
+IsPremiumRoadHandlingPackage: bit
+*(create only one object type named Id and assign all these columns that object type)
+
+sdMoney:
+SalePrice: numeric(18,2)
+LineItemDiscount: numeric(18,2)
+DerivedDiscountedSalePrice: numeric(18,2)
+Cost: numeric(18,2)
+RepairsCharge: numeric(18,2)
+PartsCharge: numeric(18,2)
+DeliveryCharge: numeric(18,2)
+SpendCapacity: numeric(18,2)
+TotalSalePrice: numeric(18,2)
+*(create only one object type named Id and assign all these columns that object type)
+
+sdInt
+TransactionNumber: int
+UserAuthenticatedKey: int
+LowerThreshold: int
+UpperThreshold: int
+LineItemNumber: int
+verison: int
+
+
+dString
+--------------------------------------------
+
+ClassTime: nvarchar(5)
+StockCode: nvarchar(50)
+VehicleColor: nvarchar(50)
+MarketingType: nvarchar(200)
+InvoiceNumber: nchar(8)
+
+
+sdCountryCode: default char(3)
+CountryISO3: char(3)
+CountryISO2: char(2)
+Country: char(2)
+CustomerCountry: char(2)
+ManufacturerVehicleMakeCountry: nchar(3)
+ManufacturerModelVariant: char(3)
+
+
+sdAddress:
+CustomerAddress1: nvarchar(50)
+CustomerAddress2: nvarchar(50)
+CustomerTown: nvarchar(50)
+SalesRegion: nvarchar(20)
+CustomerPostalCode: nvarchar(10)
+
+
+sdNotes: default nvarchar(4000)
+Note : nvarchar(200)
+CustomerComments: nvarchar(4000)
+definition: nvarchar(4000)
+CategoryDescription: nvarhchar(200)
+
+sdName: default nvarchar(100)
+CountryName: nvarchar(100)
+CustomerName nvarchar(100)
+GroupMemberFirstName: nvarchar(30)
+GroupMemberLastName: nvarchar(30)
+GroupName: nvarchar(30)
+ManufacturerModelName: nvarchar(100)
+ManufacturerVehicleMakeName: nvarchar(100)
+StaffName: nvarchar(100)
+MakeName: nvarchar(100)
+IndividualProject: nvarchar(30)
+Department: nvarchar(30)
+
+
+
+
+
+
+
+
+
